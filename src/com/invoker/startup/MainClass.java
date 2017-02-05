@@ -2,18 +2,14 @@ package com.invoker.startup;
 
 
 import com.invoker.annotation.MyMethodAnnotation;
-import com.invoker.scanner.classes.TestClassInvoke;
 import com.invoker.scanner.classes.TestClassInvokeKhuri;
 import com.invoker.scanner.classes.TestClassKhuri;
+import com.invoker.annotation.MyInstanceAnnotation;
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodInterceptor;
 import org.springframework.cglib.proxy.MethodProxy;
 
-import com.invoker.annotation.MyInstanceAnnotation;
-import com.invoker.scanner.classes.TestClass;
-
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
