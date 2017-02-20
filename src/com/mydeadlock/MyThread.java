@@ -16,6 +16,7 @@ public class MyThread extends Thread{
     public void run() {
         synchronized (test) {
             System.out.println("Entered l1 by" +Thread.currentThread().getName());
+            test.notifyAll();
             synchronized (test2) {
                 System.out.println("Entered l2 by" +Thread.currentThread().getName());
                 try {
